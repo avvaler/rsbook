@@ -30,8 +30,21 @@ author = 'Valer Avramenko'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-"myst_parser"
+extensions = ["myst_parser"]
+myst_enable_extensions = [
+    "amsmath",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
+    # "linkify",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -70,14 +83,14 @@ html_theme_options = {
     "use_repository_button": True,
     "use_issues_button": True,
     "use_edit_page_button": True,
-    # "show_navbar_depth": 2,
+    "show_navbar_depth": 3,
     "extra_navbar": "<p>Иннополис, <br> 2022</p>",
     "extra_footer": "Последнее изменение 04.05.2022",
-    "announcement": "Добавлена глава I",
+    "announcement": "03.05.2022 Разработана структура",
 }
 
 # html_logo = "https://cdn-icons-png.flaticon.com/512/2909/2909672.png"
-# html_logo = "logoG.png"
+html_logo = "images/_logo.png"
 html_title = "Дистанционное зондирование Земли"
 
 

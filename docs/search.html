@@ -58,7 +58,7 @@
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">Добавлена глава I</div>
+<div class="announcement header-item noprint">03.05.2022 Разработана структура</div>
 <div class="header header-item noprint"></div>
 
     
@@ -75,6 +75,11 @@
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/_logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Дистанционное зондирование Земли</h1>
@@ -85,7 +90,167 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Введение
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="000_intro/preface.html">
+   Предисловие
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="000_intro/structure.html">
+   Структура учебного пособия
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="000_intro/termsUsed.html">
+   Используемые термины и определения
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="000_intro/preconditions.html">
+   Предусловия
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Теоретический базис
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_theory/digitalCartography.html">
+   Цифровая картография и геоинформационные системы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_theory/spatialDataModels.html">
+   Модели пространственных данных
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_theory/mapMathBasis.html">
+   Математическая основа картографии
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_theory/remoteSensingIntro.html">
+   Основы дистанционного зондирования Земли
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_theory/emSpectrum.html">
+   Электромагнитный спектр
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_theory/rsDataTypes.html">
+   Виды данных дистанционного зондирования
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_theory/rsDataParams.html">
+   Характеристики данных дистанционного зондирования
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_theory/satellites.html">
+   Сенсоры и платформы космической съемки
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Практика работы
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_practice/tools.html">
+   Инструменты
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_practice/objectsMethods.html">
+   Объекты и методы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_practice/imageProcessing.html">
+   Обработка изображений
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_practice/imageCollections.html">
+   Коллекции изображений
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_practice/vectorData.html">
+   Векторные данные
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_practice/dataProcessing.html">
+   Преобразования данных
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="002_practice/appsDev.html">
+   Разработка сервисов и приложений
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Аспекты применения
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="003_usage/forestry.html">
+   Лесоведение и лесное хозяйство
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="003_usage/agriculture.html">
+   Агрономия и сельское хозяйство
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="003_usage/hydrography.html">
+   Гидрография
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Приложения
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="004_appendices/references.html">
+   Список источников
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="004_appendices/geeFunctions.html">
+   Краткий справочник JS API GEE
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="004_appendices/styleGuide.html">
+   Справка по оформлению
+  </a>
+ </li>
+</ul>
+
     </div>
 </nav></div>
         <div class="bd-sidebar__bottom">
