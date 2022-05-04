@@ -3,12 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Основы дистанционного зондирования Земли
-========================================
+Дистанционное зондирование Земли в Google Earth Engine
+======================================================
+
+Учебное пособие посвящено
+
+Пособие предназначено для широкого круга специалистов, использующих материалы космических съемок в своей профессиональной деятельность
 
 .. toctree::
    :maxdepth: 3
-   :hidden:
    :caption: Введение
 
    000_intro/preface
@@ -18,7 +21,6 @@
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
    :caption: Теоретический базис
 
    001_theory/digitalCartography
@@ -32,8 +34,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
-   :caption: Практика работы
+   :caption: Практическое использование
 
    002_practice/tools
    002_practice/objectsMethods
@@ -45,8 +46,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
-   :caption: Аспекты применения
+   :caption: Сферы применения
 
    003_usage/forestry
    003_usage/agriculture
@@ -54,11 +54,13 @@
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
+   :caption: Справочник GEE
+
+   004_appendices/geeFunctions
+
+.. toctree::
+   :maxdepth: 2
    :caption: Приложения
 
    004_appendices/references
-   004_appendices/geeFunctions
    004_appendices/styleGuide
-
-Аннотация учебника

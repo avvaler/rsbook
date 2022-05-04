@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Основы дистанционного зондирования Земли &#8212; Дистанционное зондирование Земли</title>
+    <title>Дистанционное зондирование Земли в Google Earth Engine &#8212; Дистанционное зондирование Земли в Google Earth Engine</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -78,7 +78,7 @@
       <img src="_static/_logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Дистанционное зондирование Земли</h1>
+      <h1 class="site-logo" id="site-title">Дистанционное зондирование Земли в Google Earth Engine</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -162,7 +162,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Практика работы
+  Практическое использование
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -204,13 +204,13 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Аспекты применения
+  Сферы применения
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="003_usage/forestry.html">
-   Лесоведение и лесное хозяйство
+   Лесоведение, лесное и лесопарковое хозяйство
   </a>
  </li>
  <li class="toctree-l1">
@@ -226,6 +226,18 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Справочник GEE
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="004_appendices/geeFunctions.html">
+   Краткий справочник JS API GEE
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Приложения
  </span>
 </p>
@@ -233,11 +245,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="004_appendices/references.html">
    Список источников
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="004_appendices/geeFunctions.html">
-   Краткий справочник JS API GEE
   </a>
  </li>
  <li class="toctree-l1">
@@ -429,7 +436,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Основы дистанционного зондирования Земли</h1>
+                <h1>Дистанционное зондирование Земли в Google Earth Engine</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -441,19 +448,71 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="id1">
-<h1>Основы дистанционного зондирования Земли<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">#</a></h1>
+  <section id="google-earth-engine">
+<h1>Дистанционное зондирование Земли в Google Earth Engine<a class="headerlink" href="#google-earth-engine" title="Ссылка на этот заголовок">#</a></h1>
+<p>Учебное пособие посвящено</p>
+<p>Пособие предназначено для широкого круга специалистов, использующих материалы космических съемок в своей профессиональной деятельность</p>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Введение</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="000_intro/preface.html">Предисловие</a></li>
+<li class="toctree-l1"><a class="reference internal" href="000_intro/structure.html">Структура учебного пособия</a></li>
+<li class="toctree-l1"><a class="reference internal" href="000_intro/termsUsed.html">Используемые термины и определения</a></li>
+<li class="toctree-l1"><a class="reference internal" href="000_intro/preconditions.html">Предусловия</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="000_intro/preconditions.html#id2">Используемое ПО</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="000_intro/preconditions.html#id3">Установка</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Теоретический базис</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/digitalCartography.html">Цифровая картография и геоинформационные системы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/spatialDataModels.html">Модели пространственных данных</a></li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/mapMathBasis.html">Математическая основа картографии</a></li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/remoteSensingIntro.html">Основы дистанционного зондирования Земли</a></li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/emSpectrum.html">Электромагнитный спектр</a></li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/rsDataTypes.html">Виды данных дистанционного зондирования</a></li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/rsDataParams.html">Характеристики данных дистанционного зондирования</a></li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/satellites.html">Сенсоры и платформы космической съемки</a></li>
+</ul>
 </div>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Практическое использование</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/tools.html">Инструменты</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/objectsMethods.html">Объекты и методы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/imageProcessing.html">Обработка изображений</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/imageCollections.html">Коллекции изображений</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/vectorData.html">Векторные данные</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/dataProcessing.html">Преобразования данных</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/appsDev.html">Разработка сервисов и приложений</a></li>
+</ul>
 </div>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Сферы применения</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="003_usage/forestry.html">Лесоведение, лесное и лесопарковое хозяйство</a></li>
+<li class="toctree-l1"><a class="reference internal" href="003_usage/agriculture.html">Агрономия и сельское хозяйство</a></li>
+<li class="toctree-l1"><a class="reference internal" href="003_usage/hydrography.html">Гидрография</a></li>
+</ul>
 </div>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Справочник GEE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="004_appendices/geeFunctions.html">Краткий справочник JS API GEE</a></li>
+</ul>
 </div>
-<p>Аннотация учебника</p>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Приложения</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="004_appendices/references.html">Список источников</a></li>
+<li class="toctree-l1"><a class="reference internal" href="004_appendices/styleGuide.html">Справка по оформлению</a></li>
+</ul>
+</div>
 </section>
 
 
@@ -477,8 +536,6 @@ title="Print to PDF"
     </div>
     <div class="footer-content row">
         <footer class="col footer"><p>
-  
-    By Valer Avramenko<br/>
   
       &copy; Copyright 2022, Valer Avramenko.<br/>
     <div class="extra_footer">

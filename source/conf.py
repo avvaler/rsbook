@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Дистанционное зондирование Земли'
+project = 'Дистанционное зондирование Земли в Google Earth Engine'
 copyright = '2022, Valer Avramenko'
-author = 'Valer Avramenko'
+# author = 'Valer Avramenko'
 
 # The full version, including alpha/beta/rc tags
 # release = '0.1'
@@ -91,6 +91,6 @@ html_theme_options = {
 
 # html_logo = "https://cdn-icons-png.flaticon.com/512/2909/2909672.png"
 html_logo = "images/_logo.png"
-html_title = "Дистанционное зондирование Земли"
+html_title = "Дистанционное зондирование Земли в Google Earth Engine"
 
 
