@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Сенсоры и платформы космической съемки &#8212; Дистанционное зондирование Земли в Google Earth Engine</title>
+    <title>Системы дистанционного зондирования Земли &#8212; Дистанционное зондирование Земли в Google Earth Engine</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -34,8 +34,8 @@
     <script src="../_static/translations.js"></script>
     <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
     <link rel="search" title="Поиск" href="../search.html" />
-    <link rel="next" title="Дешифрирование данных дистанционного зондирования Земли" href="interpretation.html" />
-    <link rel="prev" title="Характеристики данных дистанционного зондирования" href="rsDataParams.html" />
+    <link rel="next" title="Общий порядок обработки данных дистанционного зондирования Земли" href="algorithms.html" />
+    <link rel="prev" title="Физические основы дистанционного зондирования Земли из космоса" href="remoteSensingIntro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="ru">
     
@@ -116,7 +116,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Теоретический базис
+  Основы дистанционного зондирования Земли
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -126,43 +126,13 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="spatialDataModels.html">
-   Модели пространственных данных
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="mapMathBasis.html">
-   Математическая основа картографии
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="remoteSensingIntro.html">
-   Основы дистанционного зондирования Земли
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="emSpectrum.html">
-   Электромагнитный спектр
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rsDataTypes.html">
-   Виды данных дистанционного зондирования
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rsDataParams.html">
-   Характеристики данных дистанционного зондирования
+   Физические основы дистанционного зондирования Земли из космоса
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Сенсоры и платформы космической съемки
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="interpretation.html">
-   Дешифрирование данных дистанционного зондирования Земли
+   Системы дистанционного зондирования Земли
   </a>
  </li>
  <li class="toctree-l1">
@@ -173,7 +143,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Практическое использование
+  Работа с данными дистанционного зондирования
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -481,23 +451,99 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
-   Основные системы мультиспектральной съемки
+   Виды данных дистанционного зондирования
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Панхроматическая съемка
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Однозональная съемка и понятие спектрального канала
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Мультиспектральная съемка
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Гиперспектральная съемка
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Радиолокационные снимки
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Данные спутниковой альтиметрии и лазерного сканирования
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
-   Гиперспектральные сенсоры
+  <a class="reference internal nav-link" href="#id13">
+   Характеристики данных дистанционного зондирования
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Разрешающая способность
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+     Спектральное разрешение
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Пространственное разрешение
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+     Радиометрическое разрешение
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id18">
+     Временное разрешение
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id8">
-   Радиолокационные сенсоры
+  <a class="reference internal nav-link" href="#id19">
+   Основные космические съемочные системы
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id9">
-   Спутниковая альтиметрия и лазерное сканирование
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id20">
+     Системы мультиспектральной съемки
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id21">
+     Системы гиперспектральной съемки
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id22">
+     Радиолокационные системы
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id23">
+     Спутниковая альтиметрия и лазерное сканирование
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -508,7 +554,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Сенсоры и платформы космической съемки</h1>
+                <h1>Системы дистанционного зондирования Земли</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -542,23 +588,99 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
-   Основные системы мультиспектральной съемки
+   Виды данных дистанционного зондирования
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Панхроматическая съемка
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Однозональная съемка и понятие спектрального канала
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Мультиспектральная съемка
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Гиперспектральная съемка
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Радиолокационные снимки
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Данные спутниковой альтиметрии и лазерного сканирования
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
-   Гиперспектральные сенсоры
+  <a class="reference internal nav-link" href="#id13">
+   Характеристики данных дистанционного зондирования
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Разрешающая способность
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+     Спектральное разрешение
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Пространственное разрешение
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+     Радиометрическое разрешение
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id18">
+     Временное разрешение
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id8">
-   Радиолокационные сенсоры
+  <a class="reference internal nav-link" href="#id19">
+   Основные космические съемочные системы
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id9">
-   Спутниковая альтиметрия и лазерное сканирование
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id20">
+     Системы мультиспектральной съемки
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id21">
+     Системы гиперспектральной съемки
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id22">
+     Радиолокационные системы
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id23">
+     Спутниковая альтиметрия и лазерное сканирование
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -571,7 +693,7 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>Сенсоры и платформы космической съемки<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">#</a></h1>
+<h1>Системы дистанционного зондирования Земли<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">#</a></h1>
 <section id="id2">
 <h2>Основные характеристики спутниковых систем<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">#</a></h2>
 <section id="id3">
@@ -585,16 +707,58 @@ title="Print to PDF"
 </section>
 </section>
 <section id="id6">
-<h2>Основные системы мультиспектральной съемки<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">#</a></h2>
-</section>
+<h2>Виды данных дистанционного зондирования<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">#</a></h2>
 <section id="id7">
-<h2>Гиперспектральные сенсоры<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">#</a></h2>
+<h3>Панхроматическая съемка<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">#</a></h3>
 </section>
 <section id="id8">
-<h2>Радиолокационные сенсоры<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">#</a></h2>
+<h3>Однозональная съемка и понятие спектрального канала<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">#</a></h3>
 </section>
 <section id="id9">
-<h2>Спутниковая альтиметрия и лазерное сканирование<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">#</a></h2>
+<h3>Мультиспектральная съемка<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id10">
+<h3>Гиперспектральная съемка<a class="headerlink" href="#id10" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id11">
+<h3>Радиолокационные снимки<a class="headerlink" href="#id11" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id12">
+<h3>Данные спутниковой альтиметрии и лазерного сканирования<a class="headerlink" href="#id12" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+</section>
+<section id="id13">
+<h2>Характеристики данных дистанционного зондирования<a class="headerlink" href="#id13" title="Ссылка на этот заголовок">#</a></h2>
+<section id="id14">
+<h3>Разрешающая способность<a class="headerlink" href="#id14" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id15">
+<h3>Спектральное разрешение<a class="headerlink" href="#id15" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id16">
+<h3>Пространственное разрешение<a class="headerlink" href="#id16" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id17">
+<h3>Радиометрическое разрешение<a class="headerlink" href="#id17" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id18">
+<h3>Временное разрешение<a class="headerlink" href="#id18" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+</section>
+<section id="id19">
+<h2>Основные космические съемочные системы<a class="headerlink" href="#id19" title="Ссылка на этот заголовок">#</a></h2>
+<section id="id20">
+<h3>Системы мультиспектральной съемки<a class="headerlink" href="#id20" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id21">
+<h3>Системы гиперспектральной съемки<a class="headerlink" href="#id21" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id22">
+<h3>Радиолокационные системы<a class="headerlink" href="#id22" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id23">
+<h3>Спутниковая альтиметрия и лазерное сканирование<a class="headerlink" href="#id23" title="Ссылка на этот заголовок">#</a></h3>
+</section>
 </section>
 </section>
 
@@ -606,17 +770,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="rsDataParams.html" title="назад страница">
+    <a class='left-prev' id="prev-link" href="remoteSensingIntro.html" title="назад страница">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">назад</p>
-            <p class="prev-next-title">Характеристики данных дистанционного зондирования</p>
+            <p class="prev-next-title">Физические основы дистанционного зондирования Земли из космоса</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="interpretation.html" title="вперёд страница">
+    <a class='right-next' id="next-link" href="algorithms.html" title="вперёд страница">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">вперёд</p>
-        <p class="prev-next-title">Дешифрирование данных дистанционного зондирования Земли</p>
+        <p class="prev-next-title">Общий порядок обработки данных дистанционного зондирования Земли</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

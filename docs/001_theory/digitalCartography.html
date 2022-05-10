@@ -34,7 +34,7 @@
     <script src="../_static/translations.js"></script>
     <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
     <link rel="search" title="Поиск" href="../search.html" />
-    <link rel="next" title="Модели пространственных данных" href="spatialDataModels.html" />
+    <link rel="next" title="Физические основы дистанционного зондирования Земли из космоса" href="remoteSensingIntro.html" />
     <link rel="prev" title="Предусловия" href="../000_intro/preconditions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="ru">
@@ -116,7 +116,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Теоретический базис
+  Основы дистанционного зондирования Земли
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -126,43 +126,13 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="spatialDataModels.html">
-   Модели пространственных данных
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="mapMathBasis.html">
-   Математическая основа картографии
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="remoteSensingIntro.html">
-   Основы дистанционного зондирования Земли
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="emSpectrum.html">
-   Электромагнитный спектр
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rsDataTypes.html">
-   Виды данных дистанционного зондирования
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rsDataParams.html">
-   Характеристики данных дистанционного зондирования
+   Физические основы дистанционного зондирования Земли из космоса
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="satellites.html">
-   Сенсоры и платформы космической съемки
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="interpretation.html">
-   Дешифрирование данных дистанционного зондирования Земли
+   Системы дистанционного зондирования Земли
   </a>
  </li>
  <li class="toctree-l1">
@@ -173,7 +143,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Практическое использование
+  Работа с данными дистанционного зондирования
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -459,18 +429,86 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Основные принципы и функции ГИС
+   Структура и основные принципы ГИС
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   Компоненты ГИС
+   Модели пространственных данных
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Векторный формат данных
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Точечные, линейные, полигональные и комплексные данные
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Основные обменные форматы данных
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Растровый формат данных
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Пространственные отношения и топологии
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
-   Сферы применения ГИС
+  <a class="reference internal nav-link" href="#id9">
+   Математическая основа картографии
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Моделирование фигуры Земли
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Географические системы координат
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Картографические проекции
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Примеры проекций
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       Форматы записи данных о системах координат
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       Основные системы координат веб–картографии
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id16">
+       Системы координат и высот, используемые в России
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -493,18 +531,86 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Основные принципы и функции ГИС
+   Структура и основные принципы ГИС
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   Компоненты ГИС
+   Модели пространственных данных
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Векторный формат данных
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Точечные, линейные, полигональные и комплексные данные
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Основные обменные форматы данных
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Растровый формат данных
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Пространственные отношения и топологии
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
-   Сферы применения ГИС
+  <a class="reference internal nav-link" href="#id9">
+   Математическая основа картографии
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Моделирование фигуры Земли
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Географические системы координат
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Картографические проекции
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Примеры проекций
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       Форматы записи данных о системах координат
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       Основные системы координат веб–картографии
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id16">
+       Системы координат и высот, используемые в России
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -519,13 +625,49 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>Цифровая картография и геоинформационные системы<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">#</a></h1>
 <section id="id2">
-<h2>Основные принципы и функции ГИС<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">#</a></h2>
+<h2>Структура и основные принципы ГИС<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">#</a></h2>
 </section>
 <section id="id3">
-<h2>Компоненты ГИС<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">#</a></h2>
-</section>
+<h2>Модели пространственных данных<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">#</a></h2>
 <section id="id4">
-<h2>Сферы применения ГИС<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">#</a></h2>
+<h3>Векторный формат данных<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">#</a></h3>
+<section id="id5">
+<h4>Точечные, линейные, полигональные и комплексные данные<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">#</a></h4>
+</section>
+<section id="id6">
+<h4>Основные обменные форматы данных<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">#</a></h4>
+</section>
+</section>
+<section id="id7">
+<h3>Растровый формат данных<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id8">
+<h3>Пространственные отношения и топологии<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+</section>
+<section id="id9">
+<h2>Математическая основа картографии<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">#</a></h2>
+<section id="id10">
+<h3>Моделирование фигуры Земли<a class="headerlink" href="#id10" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id11">
+<h3>Географические системы координат<a class="headerlink" href="#id11" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id12">
+<h3>Картографические проекции<a class="headerlink" href="#id12" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id13">
+<h3>Примеры проекций<a class="headerlink" href="#id13" title="Ссылка на этот заголовок">#</a></h3>
+<section id="id14">
+<h4>Форматы записи данных о системах координат<a class="headerlink" href="#id14" title="Ссылка на этот заголовок">#</a></h4>
+</section>
+<section id="id15">
+<h4>Основные системы координат веб–картографии<a class="headerlink" href="#id15" title="Ссылка на этот заголовок">#</a></h4>
+</section>
+<section id="id16">
+<h4>Системы координат и высот, используемые в России<a class="headerlink" href="#id16" title="Ссылка на этот заголовок">#</a></h4>
+</section>
+</section>
 </section>
 </section>
 
@@ -544,10 +686,10 @@ title="Print to PDF"
             <p class="prev-next-title">Предусловия</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="spatialDataModels.html" title="вперёд страница">
+    <a class='right-next' id="next-link" href="remoteSensingIntro.html" title="вперёд страница">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">вперёд</p>
-        <p class="prev-next-title">Модели пространственных данных</p>
+        <p class="prev-next-title">Физические основы дистанционного зондирования Земли из космоса</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

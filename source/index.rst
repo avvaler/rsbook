@@ -16,7 +16,7 @@
 Пособие предназначено для широкого круга специалистов, использующих материалы космических съемок в своей профессиональной деятельности.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Введение
 
    000_intro/preface
@@ -25,23 +25,17 @@
    000_intro/preconditions
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Теоретический базис
+   :maxdepth: 3
+   :caption: Основы дистанционного зондирования Земли
 
    001_theory/digitalCartography
-   001_theory/spatialDataModels
-   001_theory/mapMathBasis
    001_theory/remoteSensingIntro
-   001_theory/emSpectrum
-   001_theory/rsDataTypes
-   001_theory/rsDataParams
    001_theory/satellites
-   001_theory/interpretation
    001_theory/algorithms
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Практическое использование
+   :maxdepth: 3
+   :caption: Работа с данными дистанционного зондирования
 
    002_practice/tools
    002_practice/objectsMethods
@@ -52,7 +46,7 @@
    002_practice/appsDev
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Сферы применения
 
    003_usage/forestry
@@ -60,13 +54,13 @@
    003_usage/hydrography
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Справочник GEE
 
    004_appendices/geeFunctions
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Приложения
 
    004_appendices/references

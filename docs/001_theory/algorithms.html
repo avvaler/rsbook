@@ -35,7 +35,7 @@
     <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
     <link rel="search" title="Поиск" href="../search.html" />
     <link rel="next" title="Инструменты" href="../002_practice/tools.html" />
-    <link rel="prev" title="Дешифрирование данных дистанционного зондирования Земли" href="interpretation.html" />
+    <link rel="prev" title="Системы дистанционного зондирования Земли" href="satellites.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="ru">
     
@@ -116,7 +116,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Теоретический базис
+  Основы дистанционного зондирования Земли
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -126,43 +126,13 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="spatialDataModels.html">
-   Модели пространственных данных
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="mapMathBasis.html">
-   Математическая основа картографии
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="remoteSensingIntro.html">
-   Основы дистанционного зондирования Земли
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="emSpectrum.html">
-   Электромагнитный спектр
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rsDataTypes.html">
-   Виды данных дистанционного зондирования
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rsDataParams.html">
-   Характеристики данных дистанционного зондирования
+   Физические основы дистанционного зондирования Земли из космоса
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="satellites.html">
-   Сенсоры и платформы космической съемки
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="interpretation.html">
-   Дешифрирование данных дистанционного зондирования Земли
+   Системы дистанционного зондирования Земли
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -173,7 +143,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Практическое использование
+  Работа с данными дистанционного зондирования
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -491,11 +461,33 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id8">
-   Анализ данных ДЗЗ
+   Анализ данных ДЗЗ, дешифрирование
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Методы дешифрирования
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Дешифровочные признаки
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Материалы ДЗЗ, используемые для дешифрирования
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Оценка качества дешифрирования
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id9">
+  <a class="reference internal nav-link" href="#id13">
    Организация сервисов с использованием материалов ДЗЗ
   </a>
  </li>
@@ -552,11 +544,33 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id8">
-   Анализ данных ДЗЗ
+   Анализ данных ДЗЗ, дешифрирование
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Методы дешифрирования
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Дешифровочные признаки
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Материалы ДЗЗ, используемые для дешифрирования
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Оценка качества дешифрирования
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id9">
+  <a class="reference internal nav-link" href="#id13">
    Организация сервисов с использованием материалов ДЗЗ
   </a>
  </li>
@@ -591,10 +605,22 @@ title="Print to PDF"
 <h2>Оценка качества данных ДЗЗ<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">#</a></h2>
 </section>
 <section id="id8">
-<h2>Анализ данных ДЗЗ<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">#</a></h2>
-</section>
+<h2>Анализ данных ДЗЗ, дешифрирование<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">#</a></h2>
 <section id="id9">
-<h2>Организация сервисов с использованием материалов ДЗЗ<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">#</a></h2>
+<h3>Методы дешифрирования<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id10">
+<h3>Дешифровочные признаки<a class="headerlink" href="#id10" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id11">
+<h3>Материалы ДЗЗ, используемые для дешифрирования<a class="headerlink" href="#id11" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id12">
+<h3>Оценка качества дешифрирования<a class="headerlink" href="#id12" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+</section>
+<section id="id13">
+<h2>Организация сервисов с использованием материалов ДЗЗ<a class="headerlink" href="#id13" title="Ссылка на этот заголовок">#</a></h2>
 </section>
 </section>
 
@@ -606,11 +632,11 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="interpretation.html" title="назад страница">
+    <a class='left-prev' id="prev-link" href="satellites.html" title="назад страница">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">назад</p>
-            <p class="prev-next-title">Дешифрирование данных дистанционного зондирования Земли</p>
+            <p class="prev-next-title">Системы дистанционного зондирования Земли</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../002_practice/tools.html" title="вперёд страница">

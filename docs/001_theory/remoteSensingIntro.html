@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Основы дистанционного зондирования Земли &#8212; Дистанционное зондирование Земли в Google Earth Engine</title>
+    <title>Физические основы дистанционного зондирования Земли из космоса &#8212; Дистанционное зондирование Земли в Google Earth Engine</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -34,8 +34,8 @@
     <script src="../_static/translations.js"></script>
     <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
     <link rel="search" title="Поиск" href="../search.html" />
-    <link rel="next" title="Электромагнитный спектр" href="emSpectrum.html" />
-    <link rel="prev" title="Математическая основа картографии" href="mapMathBasis.html" />
+    <link rel="next" title="Системы дистанционного зондирования Земли" href="satellites.html" />
+    <link rel="prev" title="Цифровая картография и геоинформационные системы" href="digitalCartography.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="ru">
     
@@ -116,7 +116,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Теоретический базис
+  Основы дистанционного зондирования Земли
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -125,44 +125,14 @@
    Цифровая картография и геоинформационные системы
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="spatialDataModels.html">
-   Модели пространственных данных
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="mapMathBasis.html">
-   Математическая основа картографии
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Основы дистанционного зондирования Земли
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="emSpectrum.html">
-   Электромагнитный спектр
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rsDataTypes.html">
-   Виды данных дистанционного зондирования
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="rsDataParams.html">
-   Характеристики данных дистанционного зондирования
+   Физические основы дистанционного зондирования Земли из космоса
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="satellites.html">
-   Сенсоры и платформы космической съемки
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="interpretation.html">
-   Дешифрирование данных дистанционного зондирования Земли
+   Системы дистанционного зондирования Земли
   </a>
  </li>
  <li class="toctree-l1">
@@ -173,7 +143,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Практическое использование
+  Работа с данными дистанционного зондирования
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -467,6 +437,65 @@ title="Print to PDF"
    Методы ДЗЗ
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Электромагнитный спектр
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Радиоволны
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Поляризация радиоволн
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Микроволны
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Инфракрасное излучение
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Видимая часть спектра
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Ультрафиолетовое излучение
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id11">
+   Взаимодействие электромагнитного излучения с атмосферой и поверхностью Земли
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Рассеяние и поглощение атмосферой
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Поглощение и отражение поверхностью Земли
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id14">
+   Связь характеристик отражения и свойств поверхности
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -476,7 +505,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Основы дистанционного зондирования Земли</h1>
+                <h1>Физические основы дистанционного зондирования Земли из космоса</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -496,6 +525,65 @@ title="Print to PDF"
    Методы ДЗЗ
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Электромагнитный спектр
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Радиоволны
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Поляризация радиоволн
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Микроволны
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Инфракрасное излучение
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Видимая часть спектра
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Ультрафиолетовое излучение
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id11">
+   Взаимодействие электромагнитного излучения с атмосферой и поверхностью Земли
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Рассеяние и поглощение атмосферой
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Поглощение и отражение поверхностью Земли
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id14">
+   Связь характеристик отражения и свойств поверхности
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -507,7 +595,7 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>Основы дистанционного зондирования Земли<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">#</a></h1>
+<h1>Физические основы дистанционного зондирования Земли из космоса<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">#</a></h1>
 <p>Что такое дистанционное зондирование?</p>
 <section id="id2">
 <h2>История ДЗЗ<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">#</a></h2>
@@ -515,6 +603,39 @@ title="Print to PDF"
 </section>
 <section id="id3">
 <h2>Методы ДЗЗ<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">#</a></h2>
+</section>
+<section id="id4">
+<h2>Электромагнитный спектр<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">#</a></h2>
+<section id="id5">
+<h3>Радиоволны<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id6">
+<h3>Поляризация радиоволн<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id7">
+<h3>Микроволны<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id8">
+<h3>Инфракрасное излучение<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id9">
+<h3>Видимая часть спектра<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id10">
+<h3>Ультрафиолетовое излучение<a class="headerlink" href="#id10" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+</section>
+<section id="id11">
+<h2>Взаимодействие электромагнитного излучения с атмосферой и поверхностью Земли<a class="headerlink" href="#id11" title="Ссылка на этот заголовок">#</a></h2>
+<section id="id12">
+<h3>Рассеяние и поглощение атмосферой<a class="headerlink" href="#id12" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id13">
+<h3>Поглощение и отражение поверхностью Земли<a class="headerlink" href="#id13" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+</section>
+<section id="id14">
+<h2>Связь характеристик отражения и свойств поверхности<a class="headerlink" href="#id14" title="Ссылка на этот заголовок">#</a></h2>
 </section>
 </section>
 
@@ -526,17 +647,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="mapMathBasis.html" title="назад страница">
+    <a class='left-prev' id="prev-link" href="digitalCartography.html" title="назад страница">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">назад</p>
-            <p class="prev-next-title">Математическая основа картографии</p>
+            <p class="prev-next-title">Цифровая картография и геоинформационные системы</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="emSpectrum.html" title="вперёд страница">
+    <a class='right-next' id="next-link" href="satellites.html" title="вперёд страница">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">вперёд</p>
-        <p class="prev-next-title">Электромагнитный спектр</p>
+        <p class="prev-next-title">Системы дистанционного зондирования Земли</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
