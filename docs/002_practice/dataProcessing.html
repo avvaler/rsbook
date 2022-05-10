@@ -55,7 +55,7 @@
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">03.05.2022 Разработана структура</div>
+<div class="announcement header-item noprint">10.05.2022 Детализирована структура</div>
 <div class="header header-item noprint"></div>
 
     
@@ -158,6 +158,16 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../001_theory/satellites.html">
    Сенсоры и платформы космической съемки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../001_theory/interpretation.html">
+   Дешифрирование данных дистанционного зондирования Земли
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../001_theory/algorithms.html">
+   Общий порядок обработки данных дистанционного зондирования Земли
   </a>
  </li>
 </ul>
@@ -425,12 +435,88 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Конвертации векторных и растровых данных
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Интерполирование
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Преобразования изображений и коллекций
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Зональная статистика
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Статистический анализ семантики векторных данных
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Регрессии
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   Машинное обучение
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gee">
+     Обзор методов машинного обучения в
+     <em>
+      GEE
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Кластеризация
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Обучение с учителем
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -442,6 +528,71 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Конвертации векторных и растровых данных
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Интерполирование
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Преобразования изображений и коллекций
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Зональная статистика
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Статистический анализ семантики векторных данных
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Регрессии
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   Машинное обучение
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gee">
+     Обзор методов машинного обучения в
+     <em>
+      GEE
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Кластеризация
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Обучение с учителем
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -451,6 +602,36 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>Преобразования данных<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">#</a></h1>
+<section id="id2">
+<h2>Конвертации векторных и растровых данных<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">#</a></h2>
+<section id="id3">
+<h3>Интерполирование<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+</section>
+<section id="id4">
+<h2>Преобразования изображений и коллекций<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">#</a></h2>
+</section>
+<section id="id5">
+<h2>Зональная статистика<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">#</a></h2>
+</section>
+<section id="id6">
+<h2>Статистический анализ семантики векторных данных<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">#</a></h2>
+</section>
+<section id="id7">
+<h2>Регрессии<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">#</a></h2>
+</section>
+<section id="id8">
+<h2>Машинное обучение<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">#</a></h2>
+<section id="gee">
+<h3>Обзор методов машинного обучения в <em>GEE</em><a class="headerlink" href="#gee" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id9">
+<h3>Кластеризация<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id10">
+<h3>Обучение с учителем<a class="headerlink" href="#id10" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+</section>
 </section>
 
 
@@ -484,7 +665,7 @@ title="Print to PDF"
   
       &copy; Copyright 2022, Valer Avramenko.<br/>
     <div class="extra_footer">
-      Последнее изменение 04.05.2022
+      Последнее изменение 10.05.2022
     </div>
 </p>
         </footer>

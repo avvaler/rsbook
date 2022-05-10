@@ -85,8 +85,8 @@ html_theme_options = {
     "use_edit_page_button": True,
     "show_navbar_depth": 3,
     "extra_navbar": "<p>Иннополис, <br> 2022</p>",
-    "extra_footer": "Последнее изменение 04.05.2022",
-    "announcement": "03.05.2022 Разработана структура",
+    "extra_footer": "Последнее изменение 10.05.2022",
+    "announcement": "10.05.2022 Детализирована структура",
 }
 
 # html_logo = "https://cdn-icons-png.flaticon.com/512/2909/2909672.png"

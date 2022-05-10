@@ -54,7 +54,7 @@
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">03.05.2022 Разработана структура</div>
+<div class="announcement header-item noprint">10.05.2022 Детализирована структура</div>
 <div class="header header-item noprint"></div>
 
     
@@ -157,6 +157,16 @@
  <li class="toctree-l1">
   <a class="reference internal" href="001_theory/satellites.html">
    Сенсоры и платформы космической съемки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_theory/interpretation.html">
+   Дешифрирование данных дистанционного зондирования Земли
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="001_theory/algorithms.html">
+   Общий порядок обработки данных дистанционного зондирования Земли
   </a>
  </li>
 </ul>
@@ -459,14 +469,26 @@ title="Print to PDF"
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Введение</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="000_intro/preface.html">Предисловие</a></li>
-<li class="toctree-l1"><a class="reference internal" href="000_intro/structure.html">Структура учебного пособия</a></li>
-<li class="toctree-l1"><a class="reference internal" href="000_intro/termsUsed.html">Используемые термины и определения</a></li>
-<li class="toctree-l1"><a class="reference internal" href="000_intro/preconditions.html">Предусловия</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="000_intro/preconditions.html#id2">Используемое ПО</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="000_intro/preconditions.html#id3">Установка</a></li>
+<li class="toctree-l1"><a class="reference internal" href="000_intro/preface.html">Предисловие</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="000_intro/preface.html#id2">Рецензии и отзывы</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="000_intro/structure.html">Структура учебного пособия</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="000_intro/structure.html#id2">Оформление пособия</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="000_intro/termsUsed.html">Используемые термины и определения</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="000_intro/termsUsed.html#id2">Дистанционное зондирование</a></li>
+<li class="toctree-l2"><a class="reference internal" href="000_intro/termsUsed.html#id3">Анализ данных дистанционного зондирования</a></li>
+<li class="toctree-l2"><a class="reference internal" href="000_intro/termsUsed.html#id4">Цифровая картография и геоинформационные системы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="000_intro/termsUsed.html#id5">Разработка программного обеспечения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="000_intro/termsUsed.html#id6">Сферы применения</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="000_intro/preconditions.html">Предусловия</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="000_intro/preconditions.html#id2">Технические требования</a></li>
+<li class="toctree-l2"><a class="reference internal" href="000_intro/preconditions.html#id4">Литература и онлайн–курсы по теме</a></li>
+<li class="toctree-l2"><a class="reference internal" href="000_intro/preconditions.html#id6">ДЗЗ в общей схеме развития специалиста ГИС</a></li>
 </ul>
 </li>
 </ul>
@@ -474,26 +496,132 @@ title="Print to PDF"
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Теоретический базис</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="001_theory/digitalCartography.html">Цифровая картография и геоинформационные системы</a></li>
-<li class="toctree-l1"><a class="reference internal" href="001_theory/spatialDataModels.html">Модели пространственных данных</a></li>
-<li class="toctree-l1"><a class="reference internal" href="001_theory/mapMathBasis.html">Математическая основа картографии</a></li>
-<li class="toctree-l1"><a class="reference internal" href="001_theory/remoteSensingIntro.html">Основы дистанционного зондирования Земли</a></li>
-<li class="toctree-l1"><a class="reference internal" href="001_theory/emSpectrum.html">Электромагнитный спектр</a></li>
-<li class="toctree-l1"><a class="reference internal" href="001_theory/rsDataTypes.html">Виды данных дистанционного зондирования</a></li>
-<li class="toctree-l1"><a class="reference internal" href="001_theory/rsDataParams.html">Характеристики данных дистанционного зондирования</a></li>
-<li class="toctree-l1"><a class="reference internal" href="001_theory/satellites.html">Сенсоры и платформы космической съемки</a></li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/digitalCartography.html">Цифровая картография и геоинформационные системы</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/digitalCartography.html#id2">Основные принципы и функции ГИС</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/digitalCartography.html#id3">Компоненты ГИС</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/digitalCartography.html#id4">Сферы применения ГИС</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/spatialDataModels.html">Модели пространственных данных</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/spatialDataModels.html#id2">Векторный формат данных</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/spatialDataModels.html#id5">Растровый формат данных</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/spatialDataModels.html#id6">Пространственные отношения и топологии</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/mapMathBasis.html">Математическая основа картографии</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/mapMathBasis.html#id2">Моделирование фигуры Земли</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/mapMathBasis.html#id3">Географические системы координат</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/mapMathBasis.html#id4">Картографические проекции</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/mapMathBasis.html#id5">Примеры проекций</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/remoteSensingIntro.html">Основы дистанционного зондирования Земли</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/remoteSensingIntro.html#id2">История ДЗЗ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/remoteSensingIntro.html#id3">Методы ДЗЗ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/emSpectrum.html">Электромагнитный спектр</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/emSpectrum.html#id2">Радиоволны</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/emSpectrum.html#id3">Поляризация радиоволн</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/emSpectrum.html#id4">Микроволны</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/emSpectrum.html#id5">Инфракрасное излучение</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/emSpectrum.html#id6">Видимая часть спектра</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/emSpectrum.html#id7">Ультрафиолетовое излучение</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/emSpectrum.html#id8">Взаимодействие электромагнитного излучения с атмосферой и поверхностью Земли</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/emSpectrum.html#id11">Связь интенсивности отражения и свойств поверхности</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/rsDataTypes.html">Виды данных дистанционного зондирования</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataTypes.html#id2">Панхроматическая съемка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataTypes.html#id3">Однозональная съемка и понятие спектрального канала</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataTypes.html#id4">Мультиспектральная съемка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataTypes.html#id5">Гиперспектральная съемка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataTypes.html#id6">Радиолокационные снимки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataTypes.html#id7">Материалы спутниковой альтиметрии и лазерного сканирования</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/rsDataParams.html">Характеристики данных дистанционного зондирования</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataParams.html#id2">Разрешающая способность</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataParams.html#id3">Спектральное разрешение</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataParams.html#id4">Пространственное разрешение</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataParams.html#id5">Радиометрическое разрешение</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataParams.html#id6">Временное разрешение</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/rsDataParams.html#id7">Характеристики основных сенсоров и систем</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/satellites.html">Сенсоры и платформы космической съемки</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/satellites.html#id2">Основные характеристики спутниковых систем</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/satellites.html#id6">Основные системы мультиспектральной съемки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/satellites.html#id7">Гиперспектральные сенсоры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/satellites.html#id8">Радиолокационные сенсоры</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/satellites.html#id9">Спутниковая альтиметрия и лазерное сканирование</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/interpretation.html">Дешифрирование данных дистанционного зондирования Земли</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/interpretation.html#id2">Методы дешифрирования</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/interpretation.html#id3">Дешифровочные признаки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/interpretation.html#id4">Материалы ДЗЗ, используемые для дешифрирования</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/interpretation.html#id5">Оценка качества дешифрирования</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="001_theory/algorithms.html">Общий порядок обработки данных дистанционного зондирования Земли</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/algorithms.html#id2">Предварительная коррекция данных ДЗЗ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/algorithms.html#id5">Агрегирование многозональной съемки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/algorithms.html#id6">Комплексирование данных ДЗЗ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/algorithms.html#id7">Оценка качества данных ДЗЗ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/algorithms.html#id8">Анализ данных ДЗЗ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="001_theory/algorithms.html#id9">Организация сервисов с использованием материалов ДЗЗ</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Практическое использование</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="002_practice/tools.html">Инструменты</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/tools.html">Инструменты</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/tools.html#id2">Основное программное обеспечение</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/tools.html#id5">Источники данных ДЗЗ</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="002_practice/objectsMethods.html">Объекты и методы</a></li>
-<li class="toctree-l1"><a class="reference internal" href="002_practice/imageProcessing.html">Обработка изображений</a></li>
-<li class="toctree-l1"><a class="reference internal" href="002_practice/imageCollections.html">Коллекции изображений</a></li>
-<li class="toctree-l1"><a class="reference internal" href="002_practice/vectorData.html">Векторные данные</a></li>
-<li class="toctree-l1"><a class="reference internal" href="002_practice/dataProcessing.html">Преобразования данных</a></li>
-<li class="toctree-l1"><a class="reference internal" href="002_practice/appsDev.html">Разработка сервисов и приложений</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/imageProcessing.html">Обработка изображений</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/imageProcessing.html#id2">Геоизображения</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/imageProcessing.html#id3">Визуализация изображений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/imageProcessing.html#id4">Метаданные</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/imageProcessing.html#id5">Математические операции над изображениями</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/imageProcessing.html#id6">Реляционные, условные и логические операции</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/imageProcessing.html#id10">Спектральные трансформации</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/imageCollections.html">Коллекции изображений</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/imageCollections.html#id2">Визуализация коллекции изображений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/imageCollections.html#id3">Метаданные коллекций</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/imageCollections.html#id4">Фильтрация коллекций</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/imageCollections.html#id5">Итерирование функций обработки изображений в коллекции</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/imageCollections.html#id6">Построение композитов и мозаик</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/vectorData.html">Векторные данные</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/vectorData.html#id2">Метаданные векторных данных</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/vectorData.html#id4">Визуализация векторных данных</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/vectorData.html#id5">Геометрические операции</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/vectorData.html#id6">Агрегирование векторных данных</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/dataProcessing.html">Преобразования данных</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/dataProcessing.html#id2">Конвертации векторных и растровых данных</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/dataProcessing.html#id4">Преобразования изображений и коллекций</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/dataProcessing.html#id5">Зональная статистика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/dataProcessing.html#id6">Статистический анализ семантики векторных данных</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/dataProcessing.html#id7">Регрессии</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/dataProcessing.html#id8">Машинное обучение</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="002_practice/appsDev.html">Разработка сервисов и приложений</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/appsDev.html#id2">Графический интерфейс пользователя</a></li>
+<li class="toctree-l2"><a class="reference internal" href="002_practice/appsDev.html#earth-engine">Разработка приложений <em>Earth Engine</em></a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
@@ -543,7 +671,7 @@ title="Print to PDF"
   
       &copy; Copyright 2022, Valer Avramenko.<br/>
     <div class="extra_footer">
-      Последнее изменение 04.05.2022
+      Последнее изменение 10.05.2022
     </div>
 </p>
         </footer>

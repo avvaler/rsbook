@@ -55,7 +55,7 @@
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">03.05.2022 Разработана структура</div>
+<div class="announcement header-item noprint">10.05.2022 Детализирована структура</div>
 <div class="header header-item noprint"></div>
 
     
@@ -158,6 +158,16 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../001_theory/satellites.html">
    Сенсоры и платформы космической съемки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../001_theory/interpretation.html">
+   Дешифрирование данных дистанционного зондирования Земли
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../001_theory/algorithms.html">
+   Общий порядок обработки данных дистанционного зондирования Земли
   </a>
  </li>
 </ul>
@@ -425,12 +435,68 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Дистанционное зондирование
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Анализ данных дистанционного зондирования
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Цифровая картография и геоинформационные системы
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Разработка программного обеспечения
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Сферы применения
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Лесоведение, лесное и лесопарковое хозяйство
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Агрономия и сельское хозяйство
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -442,6 +508,51 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Дистанционное зондирование
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Анализ данных дистанционного зондирования
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Цифровая картография и геоинформационные системы
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Разработка программного обеспечения
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Сферы применения
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Лесоведение, лесное и лесопарковое хозяйство
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Агрономия и сельское хозяйство
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -451,28 +562,111 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>Используемые термины и определения<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">#</a></h1>
+<p>В данном разделе приведены термины и определения для основных понятий, используемых в пособии.
+Термины сгруппированы в блоки, приблизительно соответствующие основным разделам пособия.
+Для тех терминов, определения которых взяты из нормативных документов, даны ссылки на полный текст.</p>
+<section id="id2">
+<h2>Дистанционное зондирование<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">#</a></h2>
 <dl class="simple myst">
-<dt>Term 1</dt><dd><p>Definition</p>
+<dt>Дистанционное зондирование</dt><dd><p>Cбор и интерпретация информации об объекте без физического контакта с объектом. <p align="right"> <em><a class="reference external" href="https://isotc211.geolexica.org/">Словарь терминов ISO/TC 211</a></em> </p></p>
 </dd>
-<dt>Term 2</dt><dd><p>Definition</p>
+<dt>Дистанционное зондирование Земли из космоса (ДЗЗ)</dt><dd><p>Процесс получения информации о поверхности Земли путем наблюдения и измерения из космоса собственного и отраженного излучения элементов суши, океана и атмосферы в различных диапазонах электромагнитных волн в целях определения местонахождения, описания характера и временной изменчивости естественных природных параметров и явлений, природных ресурсов, окружающей среды, а также антропогенных факторов и образований. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/566277285">ГОСТ Р 59079-2020</a></em> </p></p>
+</dd>
+<dt>Космический снимок</dt><dd><p>Совокупность данных дистанционного зондирования Земли из космоса определенного уровня обработки, полученных с одного космического аппарата одной или несколькими съемочными системами в единой геометрии съемки на одну дату и время съемки, и представляющих собой изображение соответствующего участка земной поверхности. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/566277285">ГОСТ Р 59079-2020</a></em> </p></p>
+</dd>
+<dt>Уровень обработки данных ДЗЗ</dt><dd><p>Совокупность операций обработки данных дистанционного зондирования Земли из космоса, которые необходимо выполнить для получения продукта (дистанционного зондирования Земли из космоса), удовлетворяющего заданным требованиям. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/566277285">ГОСТ Р 59079-2020</a></em> </p></p>
+</dd>
+<dt>Спектральное разрешение</dt><dd><p>Ширина диапазона спектра электромагнитных волн, регистрируемых в спектральном канале целевой аппаратуры дистанционного зондирования Земли из космоса. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/566277285">ГОСТ Р 59079-2020</a></em> </p></p>
+</dd>
+<dt>Спектральный канал</dt><dd><p>Характеристика целевой аппаратуры дистанционного зондирования Земли из космоса, определяющая ее возможность по приему электромагнитного излучения в определенном спектральном диапазоне. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/566277285">ГОСТ Р 59079-2020</a></em> </p></p>
+</dd>
+<dt>Поляризационный канал</dt><dd><p>Характеристика целевой аппаратуры дистанционного зондирования Земли из космоса, определяющая ее возможность к излучению и/или приему электромагнитных сигналов с определенным направлением вектора напряженности электрического поля радиоволны. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/566277285">ГОСТ Р 59079-2020</a></em> </p></p>
+</dd>
+<dt>Пространственное разрешение</dt><dd><p>Наименьшее угловое или линейное расстояние между двумя раздельно различаемыми точечными объектами на растровом изображении, полученном в результате дистанционного зондирования Земли из космоса. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/566277285">ГОСТ Р 59079-2020</a></em> </p></p>
 </dd>
 </dl>
+</section>
+<section id="id3">
+<h2>Анализ данных дистанционного зондирования<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">#</a></h2>
 <dl class="simple myst">
-<dt>A second paragraph</dt><dd><p>A second definition</p>
+<dt>Дешифрирование данных ДЗЗ</dt><dd><p>Процесс выявления, распознавания и определения качественных и количественных характеристик объектов, процессов и явлений земной поверхности по данным дистанционного зондирования Земли из космоса, основанный на использовании дешифровочных признаков. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/566324645">ГОСТ Р 59082-2020</a></em> </p></p>
 </dd>
-<dt>Term 2</dt><dd><p>Definition 2a</p>
-</dd>
-<dd><p>Definition 2b</p>
-</dd>
-<dt>Term 3</dt><dd><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>A code block
-</pre></div>
-</div>
-</dd>
-<dd><blockquote>
-<div><p>A quote</p>
-</div></blockquote>
+<dt>Дешифровочные признаки</dt><dd><p>Характерные особенности природных и антропогенных объектов, процессов и явлений земной поверхности и атмосферы (объектов дешифрирования), фиксируемые в данных дистанционного зондирования Земли из космоса и позволяющие выявить, распознать и интерпретировать эти объекты, процессы и явления; подразделяются на прямые, присущие изображению самих объектов дешифрирования (например, их геометрические и оптические характеристики), и косвенные (индикационные), характеризующие объект дешифрирования опосредованно, на основе связи с информацией о других объектах земной поверхности. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/566324645">ГОСТ Р 59082-2020</a></em> </p></p>
 </dd>
 </dl>
+</section>
+<section id="id4">
+<h2>Цифровая картография и геоинформационные системы<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">#</a></h2>
+<dl class="simple myst">
+<dt>Цифровая картография</dt><dd><p>Раздел картографии, охватывающий теорию и практику создания и использования цифровой картографической продукции. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200009569">ГОСТ 28441-99</a></em> </p></p>
+</dd>
+</dl>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>ЦММ, ЦМР и ЦМД</strong></p>
+<p>Как правило, в российской практике под ЦММ понимается растр (матрица) высот, содержащая информацию о высотах рельефа, и объектов, возвышающихся над рельефом.</p>
+<p>ЦМР при этом представляет собой растр высот исключительно рельефа, ЦМД – растр относительных высот топографических объектов, в первую очередь растительности.</p>
+<p>Аналогичные англоязычные термины: <em>digital elevation model (DEM)</em>, <em>digital terrain model (DTM)</em>, <em>canopy height model (CHM)</em>.</p>
+</aside>
+<dl class="simple myst">
+<dt>Цифровая модель местности (ЦММ)</dt><dd><p>Цифровая картографическая модель, содержащая данные об объектах местности и ее характеристиках. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200009569">ГОСТ 28441-99</a></em> </p></p>
+</dd>
+<dt>Цифровая модель рельефа (ЦМР)</dt><dd><p>Цифровая модель местности, содержащая информацию о ее рельефе. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200009569">ГОСТ 28441-99</a></em> </p></p>
+</dd>
+<dt>Цифровая модель древостоя (ЦМД)</dt><dd><p>Цифровая модель местности, содержащая информацию о древостоях, либо о всех объектах, возвышающихся над рельефом (растительности в целом, зданиях и сооружениях, опорах и так далее). <p></p></p>
+</dd>
+<dt>Цифровая карта</dt><dd><p>Цифровая картографическая модель, содержание которой соответствует содержанию карты определенного вида и масштаба. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200009569">ГОСТ 28441-99</a></em> </p></p>
+</dd>
+</dl>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Виды объектов</strong></p>
+<p>Традиционно объекты цифровых карт подразделяются на <strong>точечные</strong> – с метрическим описанием, представленным координатами одной точки,
+<strong>линейные</strong> – с метрическим описанием, представленным последовательностью координат точек,
+<strong>площадные</strong> – с метрическим описанием, представленным последовательностю координат точек замкнутого контура,
+и <strong>комплексные</strong>, состоящие из совокупности объектов.</p>
+</aside>
+<dl class="simple myst">
+<dt>Объект цифровой карты</dt><dd><p>Структурная единица цифровой карты, характеризующая конкретный объект карты или местности и его признаки. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200009569">ГОСТ 28441-99</a></em> </p></p>
+</dd>
+<dt>Векторная форма представления</dt><dd><p>Способ представления метрической картографической информации в виде последовательности векторов. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200009569">ГОСТ 28441-99</a></em> </p></p>
+</dd>
+<dt>Растровая форма представления</dt><dd><p>Способ представления цифровой картографической информации в виде матрицы, элементами которой являются коды цветов картографического изображения. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200009569">ГОСТ 28441-99</a></em> </p></p>
+</dd>
+<dt>Система координат</dt><dd><p>Набор математических правил, описывающих, как координаты должны быть соотнесены с точками пространства. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200046908">ГОСТ Р 52572-2006</a></em> </p></p>
+</dd>
+<dt>Информационная система</dt><dd><p>Система, предназначенная для хранения, обработки, поиска, распространения, передачи и представления информации. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200004287">ГОСТ 7.0-99</a></em> </p></p>
+</dd>
+<dt>Геоинформационная система (ГИС)</dt><dd><p>Информационная система, оперирующая пространственными данными. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200044680">ГОСТ Р 52438-2005</a></em> </p></p>
+</dd>
+<dt>Пространственные данные</dt><dd><p>Данные о пространственных объектах и их наборах. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200044680">ГОСТ Р 52438-2005</a></em> </p></p>
+</dd>
+<dt>Геоинформатика</dt><dd><p>Научно-техническое направление, объединяющее теорию цифрового моделирования предметной области с использованием пространственных данных, технологии создания и использования геоинформационных систем, производство геоинформационной продукции и оказание геоинформационных услуг. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200044680">ГОСТ Р 52438-2005</a></em> </p></p>
+</dd>
+<dt>Программное обеспечение геоинформационной системы</dt><dd><p>Совокупность программ, в которых реализованы функциональные возможности геоинформационных систем и сопровождающей программной документации. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200044680">ГОСТ Р 52438-2005</a></em> </p></p>
+</dd>
+</dl>
+</section>
+<section id="id5">
+<h2>Разработка программного обеспечения<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">#</a></h2>
+<dl class="simple myst">
+<dt>Алгоритм</dt><dd><p>Конечное упорядоченное множество точно определенных правил для решения конкретной задачи. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200038309">ГОСТ Р 52292-2004</a></em> </p></p>
+</dd>
+<dt>Программа</dt><dd><p>Алгоритм, записанный в форме, воспринимаемой вычислительной машиной. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200038309">ГОСТ Р 52292-2004</a></em> </p></p>
+</dd>
+<dt>Программное обеспечение (ПО)</dt><dd><p>Совокупность компьютерных программ и программных документов, необходимых для эксплуатации этих программ. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200030195">ГОСТ Р 51904-2002</a></em> </p></p>
+</dd>
+<dt>Разработка программного обеспечения</dt><dd><p>Набор действий, результатом выполнения которых являются программные средства. Разработка ПО может включать в себя новую разработку, модификацию, многократное использование, перепроектирование или любое другое действие, требуемое для создания программных средств. <p align="right"> <em><a class="reference external" href="https://docs.cntd.ru/document/1200030195">ГОСТ Р 51904-2002</a></em> </p></p>
+</dd>
+</dl>
+</section>
+<section id="id6">
+<h2>Сферы применения<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">#</a></h2>
+<section id="id7">
+<h3>Лесоведение, лесное и лесопарковое хозяйство<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id8">
+<h3>Агрономия и сельское хозяйство<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+</section>
 </section>
 
 
@@ -506,7 +700,7 @@ title="Print to PDF"
   
       &copy; Copyright 2022, Valer Avramenko.<br/>
     <div class="extra_footer">
-      Последнее изменение 04.05.2022
+      Последнее изменение 10.05.2022
     </div>
 </p>
         </footer>

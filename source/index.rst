@@ -16,7 +16,7 @@
 Пособие предназначено для широкого круга специалистов, использующих материалы космических съемок в своей профессиональной деятельности.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Введение
 
    000_intro/preface
@@ -36,6 +36,8 @@
    001_theory/rsDataTypes
    001_theory/rsDataParams
    001_theory/satellites
+   001_theory/interpretation
+   001_theory/algorithms
 
 .. toctree::
    :maxdepth: 2

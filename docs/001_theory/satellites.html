@@ -34,7 +34,7 @@
     <script src="../_static/translations.js"></script>
     <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
     <link rel="search" title="Поиск" href="../search.html" />
-    <link rel="next" title="Инструменты" href="../002_practice/tools.html" />
+    <link rel="next" title="Дешифрирование данных дистанционного зондирования Земли" href="interpretation.html" />
     <link rel="prev" title="Характеристики данных дистанционного зондирования" href="rsDataParams.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="ru">
@@ -55,7 +55,7 @@
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">03.05.2022 Разработана структура</div>
+<div class="announcement header-item noprint">10.05.2022 Детализирована структура</div>
 <div class="header header-item noprint"></div>
 
     
@@ -158,6 +158,16 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Сенсоры и платформы космической съемки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="interpretation.html">
+   Дешифрирование данных дистанционного зондирования Земли
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="algorithms.html">
+   Общий порядок обработки данных дистанционного зондирования Земли
   </a>
  </li>
 </ul>
@@ -425,12 +435,73 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Основные характеристики спутниковых систем
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Орбита
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Схема сканирования
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Радиолокационное синтезирование апертуры
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Основные системы мультиспектральной съемки
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Гиперспектральные сенсоры
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   Радиолокационные сенсоры
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+   Спутниковая альтиметрия и лазерное сканирование
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -442,6 +513,56 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Основные характеристики спутниковых систем
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Орбита
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Схема сканирования
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Радиолокационное синтезирование апертуры
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Основные системы мультиспектральной съемки
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Гиперспектральные сенсоры
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   Радиолокационные сенсоры
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+   Спутниковая альтиметрия и лазерное сканирование
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -451,6 +572,30 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>Сенсоры и платформы космической съемки<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">#</a></h1>
+<section id="id2">
+<h2>Основные характеристики спутниковых систем<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">#</a></h2>
+<section id="id3">
+<h3>Орбита<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id4">
+<h3>Схема сканирования<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+<section id="id5">
+<h3>Радиолокационное синтезирование апертуры<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">#</a></h3>
+</section>
+</section>
+<section id="id6">
+<h2>Основные системы мультиспектральной съемки<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">#</a></h2>
+</section>
+<section id="id7">
+<h2>Гиперспектральные сенсоры<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">#</a></h2>
+</section>
+<section id="id8">
+<h2>Радиолокационные сенсоры<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">#</a></h2>
+</section>
+<section id="id9">
+<h2>Спутниковая альтиметрия и лазерное сканирование<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">#</a></h2>
+</section>
 </section>
 
 
@@ -468,10 +613,10 @@ title="Print to PDF"
             <p class="prev-next-title">Характеристики данных дистанционного зондирования</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../002_practice/tools.html" title="вперёд страница">
+    <a class='right-next' id="next-link" href="interpretation.html" title="вперёд страница">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">вперёд</p>
-        <p class="prev-next-title">Инструменты</p>
+        <p class="prev-next-title">Дешифрирование данных дистанционного зондирования Земли</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -484,7 +629,7 @@ title="Print to PDF"
   
       &copy; Copyright 2022, Valer Avramenko.<br/>
     <div class="extra_footer">
-      Последнее изменение 04.05.2022
+      Последнее изменение 10.05.2022
     </div>
 </p>
         </footer>
