@@ -55,7 +55,7 @@
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">10.05.2022 Детализирована структура</div>
+<div class="announcement header-item noprint">16.05.2022 Добавлена глава 'Быстрый старт'</div>
 <div class="header header-item noprint"></div>
 
     
@@ -116,7 +116,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Теоретический базис
+  Основы дистанционного зондирования Земли
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -126,43 +126,13 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../001_theory/spatialDataModels.html">
-   Модели пространственных данных
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../001_theory/mapMathBasis.html">
-   Математическая основа картографии
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../001_theory/remoteSensingIntro.html">
-   Основы дистанционного зондирования Земли
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../001_theory/emSpectrum.html">
-   Электромагнитный спектр
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../001_theory/rsDataTypes.html">
-   Виды данных дистанционного зондирования
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../001_theory/rsDataParams.html">
-   Характеристики данных дистанционного зондирования
+   Физические основы дистанционного зондирования Земли из космоса
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../001_theory/satellites.html">
-   Сенсоры и платформы космической съемки
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../001_theory/interpretation.html">
-   Дешифрирование данных дистанционного зондирования Земли
+   Системы дистанционного зондирования Земли
   </a>
  </li>
  <li class="toctree-l1">
@@ -173,7 +143,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Практическое использование
+  Работа с данными дистанционного зондирования
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -242,8 +212,19 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../004_appendices/geeFunctions.html">
-   Краткий справочник JS API GEE
+  <a class="reference internal" href="../004_appendices/JSManual.html">
+   Краткий справочник
+   <em>
+    JavaScript API GEE
+   </em>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../004_appendices/PyManual.html">
+   Краткий справочник
+   <em>
+    Python API GEE
+   </em>
   </a>
  </li>
 </ul>
@@ -478,11 +459,33 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#id5">
    Источники данных ДЗЗ
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#google-earth-engine">
+   Быстрый старт в
+   <em>
+    Google Earth Engine
+   </em>
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#google-earth-engine">
+    <a class="reference internal nav-link" href="#id6">
+     Открытие доступных скриптов и запуск кода
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#earth-engine">
+     Типы данных
      <em>
-      Google Earth Engine
+      Earth Engine
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Алгоритмы
+     <em>
+      Earth Engine
      </em>
     </a>
    </li>
@@ -528,11 +531,33 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#id5">
    Источники данных ДЗЗ
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#google-earth-engine">
+   Быстрый старт в
+   <em>
+    Google Earth Engine
+   </em>
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#google-earth-engine">
+    <a class="reference internal nav-link" href="#id6">
+     Открытие доступных скриптов и запуск кода
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#earth-engine">
+     Типы данных
      <em>
-      Google Earth Engine
+      Earth Engine
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Алгоритмы
+     <em>
+      Earth Engine
      </em>
     </a>
    </li>
@@ -561,8 +586,64 @@ title="Print to PDF"
 </section>
 <section id="id5">
 <h2>Источники данных ДЗЗ<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">#</a></h2>
+</section>
 <section id="google-earth-engine">
-<h3><em>Google Earth Engine</em><a class="headerlink" href="#google-earth-engine" title="Ссылка на этот заголовок">#</a></h3>
+<h2>Быстрый старт в <em>Google Earth Engine</em><a class="headerlink" href="#google-earth-engine" title="Ссылка на этот заголовок">#</a></h2>
+<p>Наиболее простым способом ознакомиться с возможностями <em>GEE</em> является интерактивный <a class="reference external" href="https://code.earthengine.google.com/">редактор кода</a>.
+Его интерфейс разделен на три блока: блок поиска, блок редактора и блок карты.
+Строка поиска в верхнем блоке позволяет проводить поиск по базе адресов и местоположений <em>Google</em> и по каталогу данных <em>Earth Engine</em>.
+Также в верхнем блоке представлены кнопки выпадающих меню: справки, обратной связи, управления аккаунтом.
+Средний блок разделен на три панели.
+Левая панель содержит три вкладки: доступные скрипты (навигатор), справка по функциям <em>JS API GEE</em> и ассеты.
+В центральной панели находится непосредственно редактор кода <em>JavaScript</em>.
+Над редактором кода расположены кнопки:</p>
+<ul class="simple">
+<li><p><em>“<strong>Get Link</strong>”</em> генерирует уникальный <em>URL</em>–адрес скрипта.</p></li>
+<li><p><em>“<strong>Save</strong>”</em> позволяет сохранить внесенные изменения (также можно сохранить изменения при помощи сочетания клавиш <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">S</span></code>).</p></li>
+<li><p><em>“<strong>Run</strong>”</em> отправляет активный скрипт на сервер <em>Earth Engine</em> для расчета (сочетание клавиш – <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">R</span></code>).</p></li>
+<li><p><em>“<strong>Reset</strong>”</em> сбрасывает редактор кода к исходному состоянию.</p></li>
+<li><p><em>“<strong>Apps</strong>”</em> выводит модальное окно менеджера приложений <em>Earth Engine</em></p></li>
+<li><p>кнопка с шестеренкой открывает выпадающее меню опций редактора.</p></li>
+</ul>
+<p>Правая панель содержит вкладки инспектора, консоли для вывода непространственных результатов расчета, и списка задач.
+Нижний блок с картой служит для визуализации пространственных результатов расчета (тематических слоев).
+Он также содержит кнопки интерактивного рисования и менеджера слоев.</p>
+<section id="id6">
+<h3>Открытие доступных скриптов и запуск кода<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">#</a></h3>
+<p>В приведенных ниже шагах показано, как открыть редактор кода <em>Earth Engine</em>, открыть и выполнить пользовательский скрипт.</p>
+<ol class="arabic simple">
+<li><p>Откройте редактор кода по ссылке: <a class="reference external" href="https://code.earthengine.google.com/">code.earthengine.google.com</a>. В случае, если вы еще не зарегистрировались в системе, вам будет предложено пройти регистрацию.</p></li>
+<li><p>Перейдите на вкладку <em>“<strong>Scripts</strong>”</em> левой панели среднего блока. Найдите в навигаторе скрипт <em>Examples / Image / NormalizedDifference</em>.</p></li>
+<li><p>Нажмите кнопку <em>“<strong>Run</strong>”</em> над центральной панелью, чтобы выполнить скрипт. В результате выполнения в блоке карты появятся два слоя: снимок <em>MODIS</em> в псевдонатуральных цветах и индексное изображение <em>NDVI</em>. В данном примере можно познакомиться с такими методами, как <code class="docutils literal notranslate"><span class="pre">normalizedDifference()</span></code>, <code class="docutils literal notranslate"><span class="pre">Map.setCenter()</span></code>, <code class="docutils literal notranslate"><span class="pre">select()</span></code>.</p></li>
+</ol>
+</section>
+<section id="earth-engine">
+<h3>Типы данных <em>Earth Engine</em><a class="headerlink" href="#earth-engine" title="Ссылка на этот заголовок">#</a></h3>
+<aside class="margin sidebar">
+<p class="sidebar-title">Другие типы данных <em>GEE</em></p>
+<p>Также в <em>Earth Engine</em> используются такие типы данных, как <code class="docutils literal notranslate"><span class="pre">Number</span></code>, <code class="docutils literal notranslate"><span class="pre">String</span></code>, <code class="docutils literal notranslate"><span class="pre">Date</span></code>, <code class="docutils literal notranslate"><span class="pre">List</span></code>, <code class="docutils literal notranslate"><span class="pre">Dictionary</span></code>, <code class="docutils literal notranslate"><span class="pre">Array</span></code>.
+Они будут рассмотрены позднее.
+Обратите внимание, что все перечисленные типы данных обрабатываются на стороне сервера.</p>
+</aside>
+<p>Двумя основными типами пространственных данных в <em>Earth Engine</em> являются <code class="docutils literal notranslate"><span class="pre">Image</span></code> и <code class="docutils literal notranslate"><span class="pre">Feature</span></code>, соответствующие растровым и векторным данным.
+Растры представлены совокупностью каналов и метаданными, векторные данные – совокупностью геометрии и семантики.
+Наборы растровых данных (например, совокупность изображений космоснимков, полученных в разное время) представлены типом <code class="docutils literal notranslate"><span class="pre">ImageCollection</span></code>.
+Наборы векторных данных представлены <code class="docutils literal notranslate"><span class="pre">FeatureCollection</span></code>.</p>
+</section>
+<section id="id7">
+<h3>Алгоритмы <em>Earth Engine</em><a class="headerlink" href="#id7" title="Ссылка на этот заголовок">#</a></h3>
+<p>Существует несколько способов запуска операций посредством <em>API</em>:</p>
+<ul class="simple">
+<li><p>Вызов методов, прикрепленных к объектам.</p></li>
+<li><p>Вызов алгоритмов непосредственно.</p></li>
+<li><p>Вызов специфических функций редактора кода.</p></li>
+<li><p>Определение и вызов пользовательских функций.</p></li>
+</ul>
+<p>Примером вызова метода, прикрепленного к объекту, может быть вызов метода <code class="docutils literal notranslate"><span class="pre">add()</span></code> типа данных <code class="docutils literal notranslate"><span class="pre">Image</span></code>:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">image1</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">image2</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Данный метод добавляет каналы <code class="docutils literal notranslate"><span class="pre">image1</span></code> к каналам <code class="docutils literal notranslate"><span class="pre">image2</span></code>.</p>
 </section>
 </section>
 </section>
@@ -598,7 +679,7 @@ title="Print to PDF"
   
       &copy; Copyright 2022, Valer Avramenko.<br/>
     <div class="extra_footer">
-      Последнее изменение 10.05.2022
+      Последнее изменение 16.05.2022
     </div>
 </p>
         </footer>

@@ -57,7 +57,8 @@
    :maxdepth: 3
    :caption: Справочник GEE
 
-   004_appendices/geeFunctions
+   004_appendices/JSManual
+   004_appendices/PyManual
 
 .. toctree::
    :maxdepth: 3
